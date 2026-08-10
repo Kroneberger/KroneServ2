@@ -1,0 +1,52 @@
+/*
+body {
+    animation: aparecerBody 2s ease-in-out;
+}
+
+@keyframes aparecerBody {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+*/
+header {
+    width: 100%;
+    min-height: 38vw;
+    height: 35vh;
+    padding-top: 3vw;
+}
+
+.volver_a_inicio {
+    margin-left: 4vw;
+}
+main {
+    gap: 30px;
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+section .section__title {
+    width: 90%;
+    color: #1c2f4f;
+    margin: 0;
+    margin-left: 2.5vw;
+    padding: 10px 0;
+    text-align: left;
+}
+
+.section__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10vw;
+}
+
+.section__content div {
+    background: inherit;
+}
+.section__content img {
+    height: 120px;
+    filter: drop-shadow(0 0 3px   #444);
+}
+
+
