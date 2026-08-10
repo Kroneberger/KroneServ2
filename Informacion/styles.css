@@ -1,0 +1,59 @@
+header {
+    background: linear-gradient(180deg, #333, #555c, #8887, #8886),
+                url("../Pagina Principal/imagenes/Escritorio-Trabajo.jpg") center;
+    background-size: cover;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background: #e2e4ed;
+    min-height: 30vh;
+    width: 100%;
+    margin: auto;
+    flex-grow: 1;
+    color: #123;
+    text-align: center;
+}
+
+.section__content {
+    margin: 8vh 0;
+    padding: 4vw;
+
+}
+
+.section__info {
+    display: flex;
+    flex-direction: column;
+    padding: 4vw;
+}
+
+.section__info h4 {
+    padding: 3vh 0;
+    text-align: left;
+}
+.section__info a {
+    margin-top: 3vh;
+    margin: auto;
+}
+
+section div p {
+    white-space: pre-line;
+    text-align: left;
+    width: 96%;
+    margin: auto;
+    align-items: center;
+    font-size: clamp(0.85em, 1vw, 16px);
+}
+
+.p__conteiner {
+    border-left: 3px solid #46a;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 5vh;
+}
+
+footer {
+    margin-top: 0;
+}

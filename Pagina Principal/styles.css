@@ -1,0 +1,167 @@
+header {
+    background: linear-gradient(to right, #111b, #1115, #8882,  #8882,#3338 ),
+                linear-gradient(to top, #222a, #8882, #8882,  #8882,#111a),
+                url("../Pagina Principal/imagenes/Vivienda_Unifamiliar_La-salada.png") center;
+    background-size: cover;
+    max-height: 80vh;
+    min-height: 80vh;
+    height: 80vw;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    border-radius: 50px;
+    padding: 10px 0;
+    border: 3px solid #242a3b;
+    box-shadow: 0 0 8px #126c;
+    z-index: 100;
+    font-size: clamp(.7em, 1.3vw, 20px);
+    margin-top: 3vh;
+}
+
+.titulo__inicio__conteiner {
+    position: absolute;
+    padding: 4vw;
+    bottom: 2vh;
+    left: 0;
+    width: 60%;
+}
+
+header img {
+    min-height: 10vh;
+    height: 10vw;
+    filter: drop-shadow(0 0 3px #777a)
+}
+
+
+nav ul {
+    width: 100%;
+    justify-items: space-around;
+}
+
+.boxShadowClick {
+    box-shadow: 0 0 4px #999;
+    scale: 1;
+    animation: boxShadow--scale 1400ms 700ms ease-in-out;
+}
+
+@keyframes boxShadow--scale{
+    0% {scale: 1; box-shadow:0 0 4px #666 ;}
+    50% {scale: 1.015; box-shadow:0 0 10px #999 ;}
+    100% {scale: 1; box-shadow:0 0 4px #666;}
+}
+
+
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: min(5vh);
+    gap: max(8vw);
+}
+
+section {
+    display: flex;
+    box-sizing: border-box;
+    flex-grow: 1;
+    background: #c2c4d2ea;
+    color: #1b2a4b;
+    min-height: 28vh;
+    height: 35vw;
+    width: 90%;
+    margin: auto;
+    border-radius: 25px;
+    box-shadow: 0 0 4px #777;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #3330;
+    transition: scale 250ms ease,
+                box-shadow 250ms ease,
+                background 250ms ease,
+                border 250ms ease,
+                opacity  250ms ease;
+}
+
+section:hover {
+    box-shadow: 0 0 10px #999;
+    background: #c2c4d2 ;
+    border: 2px solid #234d;
+}
+
+#inicio {
+    height: 20vh;
+    min-height: 20vw;
+    max-height: 20vh;
+}
+
+
+
+
+#servicios {
+    background: linear-gradient(to right, #eee, #eee4, #eee0),
+                url("imagenes/Clasico Invierno.png") center;
+    background-size: cover;
+    border: none;
+}
+
+#informacion {
+    background: linear-gradient(to right, #eee, #eee6, #eee0),
+                url("imagenes/Escritorio-Trabajo.jpg")center;
+    background-size: cover;
+    border: none;
+}
+
+
+section .section__conteiner {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    position: relative;
+}
+
+.section__conteiner__info {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.section__conteiner__boton {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 10;
+}
+
+.section__conteiner h2 {
+    text-transform: uppercase;
+    width: 40%;
+    font-size: clamp(1.6em, 5vw, 22px);
+}
+
+.section__conteiner h2, .section__conteiner h3 {
+    text-align: left;
+}   
+
+/*------- FOOTER -------*/
+
+.footer__contacto-animation {
+    background: linear-gradient(315deg, #2a2b2a, #39393c, #2a2b2a, #aaa, #2a2b2a, #39393c, #2a2b2a);
+    background-size: 450%;
+    animation: moverGradiente 2100ms 500ms ease-in-out forwards;
+    background-position: right;
+}   
+
+@keyframes moverGradiente {
+    0%   { background-position: 100%; }
+    55% {color: #39393c;}
+    100% { background-position: 0%; }
+}
+
+
